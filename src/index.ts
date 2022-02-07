@@ -21,6 +21,10 @@ app.get('/job', (req, res) => {
     res.send(`Hello ${NAME}, the ${TITLE}`);
 });
 
+app.get('/exception', (req, res) => {
+    throw new Error("Error handler triggered!");
+});
+
 app.listen(PORT, () => {
-    console.log(`Express with Typescript and Otel! http://localhost:${PORT}`);
+    console.log(`Express with Typescript and Otel! \nRunning on http://localhost:${PORT}`);
 });
