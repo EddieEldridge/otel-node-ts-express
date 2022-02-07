@@ -21,7 +21,6 @@ app.get('/job', (req, res) => {
     res.send(`Hello ${NAME}, the ${TITLE}`);
 });
 
-
 app.listen(PORT, () => {
     console.log(`Express with Typescript and Otel! http://localhost:${PORT}`);
 });
