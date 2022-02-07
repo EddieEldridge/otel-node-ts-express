@@ -4,7 +4,7 @@ const {
 } = require('lightstep-opentelemetry-launcher-node');
 
 const sdk = lightstep.configureOpenTelemetry({
-  accessToken: process.env.LS_TOKEN,
+  accessToken: process.env.LS_ACCESS_TOKEN,
   serviceName: 'otel-express-node',
 });
 
